@@ -16,14 +16,14 @@ public class AboutView extends VerticalLayout {
     public AboutView() {
         setSpacing(false);
 
-        Image img = new Image("images/empty-plant.png", "placeholder plant");
-        img.setWidth("200px");
+        Image img = new Image("https://source.unsplash.com/random", "placeholder plant");
+        img.setWidth("500px");
         add(img);
 
-        H2 header = new H2("This place intentionally left empty");
+        H2 header = new H2("CRUD com Vaadin");
         header.addClassNames(Margin.Top.XLARGE, Margin.Bottom.MEDIUM);
         add(header);
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
+        add(new Paragraph("O projeto consistirá em uma aplicação web para gerenciamento de usuários, onde será possível criar, visualizar, atualizar e deletar registros de usuários em um banco de dados. A interface do usuário será desenvolvida utilizando o Vaadin, que permite criar interfaces web ricas e interativas em Java."));
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
